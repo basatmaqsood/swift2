@@ -2,7 +2,7 @@ import React from 'react';
 
 function ApplicationProcess() {
   return (
-    <div className="container mx-auto px-4 py-4 text-xl bg-gray-100">
+    <div className="container mx-auto px-4 py-6 text-xl bg-gray-100">
       <h2 className="text-2xl font-bold text-center mb-8">Easy Application Process</h2>
       <p className="text-center text-gray-700 mb-12">Start your journey with Swift in four simple steps</p>
 
@@ -33,7 +33,7 @@ function ApplicationProcess() {
       </div>
 
       <div className="text-center mt-12">
-        <button className="bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800">Start Your Application</button>
+        <a href='/joinus' className="bg-black text-white px-8 py-3  rounded-full hover:bg-gray-800">Start Your Application</a>
       </div>
     </div>
   );
