@@ -1,8 +1,9 @@
 
 
+
 export default function Hero() {
   return (
-    <section className="bg-[#F3F3F3] py-16 md:py-24 gradient-dark md:py-40">
+    <section className="bg-[#F3F3F3] py-16 gradient-dark md:py-40">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
@@ -24,16 +25,16 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        {/* <div className="md:w-1/2">
-          <Image
+        <div className="md:w-1/2">
+          {/* <Image
             // loader={imageLoader}
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-bolt-eu-en-za-2024-11-09-20_08_53-ffp57gva12GRWMrGMCv4y7K1mLjSav.png"
-            alt="Person using Bolt app"
+            src={image}
+                        alt="Person using swift app"
             width={600}
             height={400}
             className="rounded-lg"
-          />
-        </div> */}
+          /> */}
+        </div>
       </div>
     </section>
   );

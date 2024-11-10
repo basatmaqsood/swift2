@@ -5,18 +5,18 @@ import Link from "next/link"
 export function NewsUpdates() {
   const newsItems = [
     {
-      title: "Bolt Balance — a faster, safer, and more convenient way to pay",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-bolt-eu-en-za-2024-11-09-20_08_53-ffp57gva12GRWMrGMCv4y7K1mLjSav.png",
+      title: "swift Balance — a faster, safer, and more convenient way to pay",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-swift-eu-en-za-2024-11-09-20_08_53-ffp57gva12GRWMrGMCv4y7K1mLjSav.png",
       date: "November 9, 2024",
     },
     {
       title: "Take our Women in Mobility quiz and win €4,000",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-bolt-eu-en-za-2024-11-09-20_08_53-ffp57gva12GRWMrGMCv4y7K1mLjSav.png",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-swift-eu-en-za-2024-11-09-20_08_53-ffp57gva12GRWMrGMCv4y7K1mLjSav.png",
       date: "November 8, 2024",
     },
     {
-      title: "A safer for safety: Bolt's new Rider Verification feature",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-bolt-eu-en-za-2024-11-09-20_08_53-ffp57gva12GRWMrGMCv4y7K1mLjSav.png",
+      title: "A safer for safety: swift's new Rider Verification feature",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-swift-eu-en-za-2024-11-09-20_08_53-ffp57gva12GRWMrGMCv4y7K1mLjSav.png",
       date: "November 7, 2024",
     },
   ]

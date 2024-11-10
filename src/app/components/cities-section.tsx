@@ -33,7 +33,7 @@ export default function CitiesSection() {
           <Image
             // loader={imageLoader}
             src={FeatureCities}
-            // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-bolt-eu-en-za-2024-11-09-20_08_53-ffp57gva12GRWMrGMCv4y7K1mLjSav.png"
+            // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screencapture-swift-eu-en-za-2024-11-09-20_08_53-ffp57gva12GRWMrGMCv4y7K1mLjSav.png"
             alt="City landscape"
             width={600}
             height={400}

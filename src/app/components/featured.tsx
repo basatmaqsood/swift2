@@ -1,12 +1,12 @@
 // components/FeaturesSection.tsx
 
 import React from 'react';
-import { FaBolt, FaDollarSign, FaStar } from 'react-icons/fa';
+import { Faswift, FaDollarSign, FaStar } from 'react-icons/fa';
 
 const FeaturesSection: React.FC = () => {
   const features = [
     {
-      icon: <FaBolt className="text-4xl text-yellow-500" />,
+      icon: <Faswift className="text-4xl text-yellow-500" />,
       title: 'Lightning Fast',
       description: 'Average pickup under 5 minutes. Our drivers are always nearby.',
     },

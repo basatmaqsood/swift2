@@ -25,7 +25,7 @@ export default function AppDownload() {
         <div className="md:w-1/2 hidden md:block ">
           <Image
             src={desktop}
-            alt="Bolt app interface"
+            alt="swift app interface"
             width={300}
             height={600}
             className="mx-auto"

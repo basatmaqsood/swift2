@@ -43,7 +43,7 @@ export function Header() {
         <nav className="md:hidden bg-white border-t border-gray-200">
           <ul className="flex flex-col space-y-4 py-4 px-4">
             <li>
-              <Link href="/suppport" className="text-sm font-medium text-gray-600 hover:text-black" onClick={() => setIsOpen(false)}>
+              <Link href="/support" className="text-sm font-medium text-gray-600 hover:text-black" onClick={() => setIsOpen(false)}>
                 Support
               </Link>
             </li>

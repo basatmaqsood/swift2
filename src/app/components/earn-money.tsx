@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import driver from '../images/driver.png'
 import Image from "next/image"
 
-export default function BoltEarnings() {
+export default function swiftEarnings() {
   return (
     <section className="container mx-auto px-4 py-16">
       <h1 className="text-center text-4xl font-bold text-slate-900 mb-16">
