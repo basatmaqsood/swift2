@@ -9,7 +9,7 @@ export default function CitiesSection() {
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-3xl font-bold mb-4">Making cities for people, not cars</h2>
           <p className="text-gray-600 mb-6">
-            By offering our technology and data to cities, we're helping to reduce congestion, pollution and the need for parking spaces.
+            By offering our technology and data to cities, we&apos;re helping to reduce congestion, pollution and the need for parking spaces.
           </p>
           <ul className="space-y-4 mb-6">
             <li className="flex items-center">
