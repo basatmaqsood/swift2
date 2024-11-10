@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import FeatureCities from "../images/feature-cities-for-people.webp"
-import { imageLoader } from "@/lib/imageLoader"
 
 export default function CitiesSection() {
   return (

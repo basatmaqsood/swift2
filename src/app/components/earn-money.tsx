@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import FeatureCar from "../images/feature-car.webp"
-import { imageLoader } from "@/lib/imageLoader"
 
 export default function EarnMoney() {
   return (

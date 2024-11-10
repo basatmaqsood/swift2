@@ -12,7 +12,7 @@ export default function AboutUs() {
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-3xl font-bold mb-4">About us</h2>
             <p className="text-gray-600">
-              Bolt is the first European mobility super-app. We're making cities for people, offering better alternatives for every purpose a private car serves — including ride-hailing, shared cars, scooters, and food and grocery delivery.
+              Bolt is the first European mobility super-app. We&apos;re making cities for people, offering better alternatives for every purpose a private car serves — including ride-hailing, shared cars, scooters, and food and grocery delivery.
             </p>
           </div>
           <div className="md:w-1/2 grid grid-cols-3 gap-4">

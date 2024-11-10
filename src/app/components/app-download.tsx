@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { imageLoader } from "@/lib/imageLoader"
 
 export default function AppDownload() {
   return (

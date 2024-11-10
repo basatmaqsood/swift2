@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { imageLoader } from "@/lib/imageLoader";
-import Link from "next/link";
+
 
 export default function Hero() {
   return (
