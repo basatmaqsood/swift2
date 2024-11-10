@@ -55,7 +55,7 @@ export default function BoltEarnings() {
               <div>
                 <h3 className="font-semibold text-slate-900">Get paid each week</h3>
                 <p className="text-slate-600">
-                  You'll receive your earnings at the end of each week – no need to wait around for payday.
+                  You&apos;ll receive your earnings at the end of each week – no need to wait around for payday.
                 </p>
               </div>
             </div>
