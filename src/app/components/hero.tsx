@@ -16,12 +16,12 @@ export default function Hero() {
             Start Driving
           </Link> */}
           <div className="flex space-x-4 justify-start items-center">
-            <button className="bg-yellow-500 text-black font-semibold py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-200 ease-in-out">
+            <a href="/joinus" className="bg-yellow-500 text-black font-semibold py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-200 ease-in-out">
               Start Driving
-            </button>
-            <button className="border-2 border-yellow-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-yellow-500 hover:text-black transition duration-200 ease-in-out">
+            </a>
+            <a href="/support" className="border-2 border-yellow-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-yellow-500 hover:text-black transition duration-200 ease-in-out">
               Learn More
-            </button>
+            </a>
           </div>
         </div>
         {/* <div className="md:w-1/2">

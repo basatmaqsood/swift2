@@ -26,10 +26,10 @@ export function Header() {
 
         {/* Navigation Links for Desktop */}
         <nav className="hidden md:flex items-center space-x-6">
-          <Link href="#" className="text-sm font-medium text-gray-600 hover:text-black">
+          <Link href="/support" className="text-sm font-medium text-gray-600 hover:text-black">
             Support
           </Link>
-          <Link href="#ecosystem" className="text-sm font-medium text-gray-600 hover:text-black">
+          <Link href="/#ecosystem" className="text-sm font-medium text-gray-600 hover:text-black">
             Our Ecosystem
           </Link>
           <Link href="#" className="bg-black text-white hover:bg-gray-800 px-4 py-2 rounded-2xl">
