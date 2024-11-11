@@ -1,20 +1,19 @@
-import { Header } from './components/header'
 import  Hero  from './components/hero'
-import { Benefits } from './components/benefits'
-import { Steps } from './components/steps'
-import { Features } from './components/features'
-import { FAQ } from './components/faq'
-import Footer from './components/footer'
+import AppDownload from '../components/app-download'
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
+import DriverBenefits from '../components/driver-benefits'
+import DriverApplicationForm from './components/driver-application-form'
+
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Header />
+      <Navbar />
       <Hero />
-      <Benefits />
-      <Features />
-      <Steps /> 
-      <FAQ />
+      <DriverApplicationForm/>
+      <DriverBenefits />
+      <AppDownload />
       <Footer />
     </main>
   
