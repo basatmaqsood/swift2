@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useForm, SubmitHandler } from 'react-hook-form'
+import { useForm, SubmitHandler } from 'react-hook-form'  
 import { ChevronLeft, ChevronRight, Upload } from 'lucide-react'
 
 type FormData = {
@@ -49,7 +49,7 @@ export default function DriverApplicationForm() {
   const [currentStep, setCurrentStep] = useState(0)
   const { register, handleSubmit, formState: { errors }, reset, watch } = useForm<FormData>()
 
-  const onSubmit: SubmitHandler<FormData> = (data) => {
+  const onSubmit: SubmitHandler<FormData> = (data: any) => {
     console.log(data)
     alert('Application submitted successfully!')
     reset()

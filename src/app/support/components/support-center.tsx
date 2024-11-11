@@ -51,8 +51,8 @@ export default function SupportCenter() {
               <li>Open your Swift! app</li>
               <li>Go to Trip History</li>
               <li>Select the relevant trip</li>
-              <li>Click "Report an Issue"</li>
-              <li>Select "Safety Incident"</li>
+              <li>Click &quot;Report an Issue&quot;</li>
+              <li>Select &quot;Safety Incident&quot;</li>
             </ol>
             <p className="mt-4">
               For immediate assistance, use the emergency button in the app or call our 24/7 safety line: 0800 SWIFT SA
