@@ -9,7 +9,7 @@ export default function DriverBenefits() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">Drive with Swift!</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Join South Africa's most driver-focused e-hailing platform. Enjoy better earnings, comprehensive support, and exclusive benefits.
+            Join South Africa&apos;s most driver-focused e-hailing platform. Enjoy better earnings, comprehensive support, and exclusive benefits.
           </p>
         </div>
 
