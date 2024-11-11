@@ -1,37 +1,54 @@
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import desktop from "../images/desktop.webp"
+import Image from "next/image";
+import Link from "next/link";
+import image from "../images/1.png";
+import googlePlay from "../images/googleplay.png";
+import appstore from "../images/appstore.jpg";
 
 export default function AppDownload() {
   return (
-    <section className="py-8 md:py-16 bg-yellow-400 text-black mx-2 md:mx-auto px-4 rounded-lg mb-4">
-      <div className="container mx-auto px-2 flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 mb-8 md:mb-0">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Request in seconds, ride in minutes.
-          </h2>
-          <p className="mb-6 font-bold">
-            Available for iOS and Android devices.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 ">
-            <Button variant="secondary" className="bg-white text-black hover:bg-gray-100 font-bold">
-              Download for iOS
-            </Button>
-            <Button variant="secondary" className="bg-white text-black hover:bg-gray-100 font-bold">
-              Download for Android
-            </Button>
+    <section className="bg-black py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid gap-12 md:grid-cols-2 items-center">
+          <div>
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Experience Swift! on Your Phone
+            </h2>
+            <p className="text-gray-400 mb-8">
+              Download our app and enjoy seamless rides with enhanced safety
+              features.
+            </p>
+            <div className="flex space-x-4">
+              <Link href="#">
+                <Image
+                  src={appstore}
+                  alt="Download on the App Store"
+                  width={135}
+                  height={40}
+                  className="h-10"
+                />
+              </Link>
+              <Link href="#">
+                <Image
+                  src={googlePlay}
+                  alt="Get it on Google Play"
+                  width={135}
+                  height={40}
+                  className="h-10"
+                />
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="md:w-1/2 hidden md:block ">
-          <Image
-            src={desktop}
-            alt="swift app interface"
-            width={300}
-            height={600}
-            className="mx-auto"
-          />
+          <div className="relative">
+            <Image
+              src={image}
+              alt="App Preview"
+              width={400}
+              height={500}
+              className="mx-auto"
+            />
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
