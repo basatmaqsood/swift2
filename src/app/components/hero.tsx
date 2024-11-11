@@ -19,7 +19,7 @@ export default function Hero() {
             Platform
           </h1>
           <p className="text-lg text-gray-600">
-            Experience safer, smarter transportation with South Africa's most innovative e-hailing service.
+            Experience safer, smarter transportation with South Africa&apos;s most innovative e-hailing service.
           </p>
           <div className="flex space-x-4">
             <Link href="#">
