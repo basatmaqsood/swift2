@@ -22,7 +22,7 @@ export default function Component() {
               Make money driving with Swift
             </h1>
             <p className="mt-4 text-xl text-white/90">
-            Be part of Africa's most secure e-hailing ecosystem.
+            Be part of Africa&apos;s most secure e-hailing ecosystem.
 
 </p>
           </div>

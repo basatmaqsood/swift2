@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'  
-import { ChevronLeft, ChevronRight, Upload } from 'lucide-react'
+import { ChevronLeft, ChevronRight} from 'lucide-react'
 
 type FormData = {
   // Personal Information
@@ -47,9 +47,9 @@ const steps = [
 
 export default function DriverApplicationForm() {
   const [currentStep, setCurrentStep] = useState(0)
-  const { register, handleSubmit, formState: { errors }, reset, watch } = useForm<FormData>()
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>()
 
-  const onSubmit: SubmitHandler<FormData> = (data: any) => {
+  const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log(data)
     alert('Application submitted successfully!')
     reset()
@@ -129,7 +129,7 @@ export default function DriverApplicationForm() {
         return (
           <div className="space-y-4">
             <div className="mb-4">
-              <label htmlFor="driversLicense" className="block text-sm font-medium text-gray-700">Driver's License</label>
+              <label htmlFor="driversLicense" className="block text-sm font-medium text-gray-700">Driver&apos;s License</label>
               <input
                 {...register('driversLicense', { required: 'Driver\'s license is required' })}
                 id="driversLicense"
