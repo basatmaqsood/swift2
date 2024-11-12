@@ -59,23 +59,23 @@ export default function Navbar() {
               <Link href="/about" className="text-white hover:text-gray-300">
                 About
               </Link>
-              <Link href="/services" className="text-white hover:text-gray-300">
+              <Link href="/#services" className="text-white hover:text-gray-300">
                 Services
               </Link>
-              <Link href="/drivers" className="text-white hover:text-gray-300">
+              <Link href="/#drivers" className="text-white hover:text-gray-300">
                 Drivers
               </Link>
-              <Link href="/safety" className="text-white hover:text-gray-300">
+              <Link href="/#safety" className="text-white hover:text-gray-300">
                 Safety
               </Link>
               <Link href="/support" className="text-white hover:text-gray-300 bg-[#1E1E1E] px-4 py-2 rounded inline-block">
                 Support
               </Link>
-              <Link href="/drive-with-us" className="text-white hover:text-gray-300 bg-[#1E1E1E] px-4 py-2 rounded inline-block">
+              <Link href="/joinus" className="text-white hover:text-gray-300 bg-[#1E1E1E] px-4 py-2 rounded inline-block">
                 Drive with Us
               </Link>
               <Link
-                href="/register"
+                href="/joinus"
                 className="bg-yellow-400 text-black font-semibold px-4 py-2 rounded hover:bg-yellow-500 transition duration-300 inline-block"
               >
                 Register
