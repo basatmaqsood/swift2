@@ -2,10 +2,10 @@ import { Briefcase, Globe } from 'lucide-react'
 
 export default function EconomicImpact() {
   return (
-    <section className="bg-[#0F1629] py-16" id="economic-impact">
+    <section className="bg-[#0F1629] py-12" id="economic-impact">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Economic Impact</h2>
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-white mb-2">Economic Impact</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             At Swift, we are committed to driving positive economic impact through job creation and a strong focus on the South African economy.
           </p>

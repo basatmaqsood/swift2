@@ -2,7 +2,7 @@ import { Shield, Search, CheckCircle } from 'lucide-react'
 
 export default function Safety() {
   return (
-    <section className="bg-black py-16" id='safety'>
+    <section className="bg-black py-12 pb-4" id='safety'>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">Your Safety Comes First</h2>

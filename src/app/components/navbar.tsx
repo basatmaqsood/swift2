@@ -25,7 +25,7 @@ export default function Navbar() {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="/#safety" className="text-white hover:text-gray-300">
+            <Link href="/#economic-impact" className="text-white hover:text-gray-300">
               About
             </Link>
             <Link href="/#services" className="text-white hover:text-gray-300">
@@ -56,7 +56,7 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden mt-4">
             <div className="flex flex-col space-y-4">
-              <Link href="/#safety" className="text-white hover:text-gray-300">
+              <Link href="/#economic-impact" className="text-white hover:text-gray-300">
                 About
               </Link>
               <Link href="/#services" className="text-white hover:text-gray-300">

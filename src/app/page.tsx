@@ -1,7 +1,6 @@
 import Navbar from './components/navbar'
 import Hero from './components/hero'
 import Features from './components/features'
-// import DriverBenefits from './components/driver-benefits'
 import AppDownload from './components/app-download'
 import Footer from './components/footer'
 import Safety from './components/safety'
@@ -13,7 +12,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
-      {/* <DriverBenefits /> */}
       <Safety />
       <EconomicImpact/>
       <AppDownload />
