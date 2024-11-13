@@ -1,6 +1,6 @@
 import  Hero  from './components/hero'
 import AppDownload from '../components/app-download'
-import Navbar from '../components/navbar'
+import Navbar from './components/navbar'
 import Footer from '../components/footer'
 import DriverBenefits from '../components/driver-benefits'
 import DriverApplicationForm from './components/driver-application-form'

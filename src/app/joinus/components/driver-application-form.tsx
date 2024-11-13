@@ -361,7 +361,7 @@ export default function DriverApplicationForm() {
             </button>
           )}
           {currentStep < steps.length - 1 ? (
-            <button type="button" onClick={nextStep} className="px-4 py-2 bg-yellow-500 text-white rounded-full hover:bg-yellow-400">
+            <button type="button" onClick={nextStep} className="px-4 py-2 bg-yellow-500 text-black rounded-full hover:bg-yellow-400">
               Next
               <ChevronRight className="inline-block" />
             </button>
