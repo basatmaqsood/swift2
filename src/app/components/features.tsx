@@ -1,6 +1,5 @@
 import { Users, Car, Truck, CarTaxiFront } from "lucide-react";
 
-
 export default function Features() {
   return (
     <section className="bg-[#0F1629] py-16" id="services">
@@ -17,13 +16,15 @@ export default function Features() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="rounded-lg bg-[#1A1F35] p-6">
             <div className="mb-4 h-12 w-12 rounded-full bg-yellow-400 p-3">
-              <CarTaxiFront  className="h-6 w-6 text-black" />
-              
+              <CarTaxiFront className="h-6 w-6 text-black" />
             </div>
             <h3 className="mb-2 text-xl font-bold text-white">Rides</h3>
             <p className="text-gray-400">
-              Affordable, request in seconds, ride in minutes{" "}
+              Affordable, request in seconds, ride in minutes
             </p>
+            <button className="mt-4 px-2 py-1 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded">
+              Learn More
+            </button>
           </div>
 
           <div className="rounded-lg bg-[#1A1F35] p-6">
@@ -36,11 +37,14 @@ export default function Features() {
             <p className="text-gray-400">
               Highly trained and vetted drivers for your peace of mind.
             </p>
+            <button className="mt-4 px-2 py-1 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded">
+              Learn More
+            </button>
           </div>
+
           <div className="rounded-lg bg-[#1A1F35] p-6">
             <div className="mb-4 h-12 w-12 rounded-full bg-yellow-400 p-3">
               <Truck className="h-6 w-6 text-black" />
-              
             </div>
             <h3 className="mb-2 text-xl font-bold text-white">
               Parcel Deliveries
@@ -48,6 +52,9 @@ export default function Features() {
             <p className="text-gray-400">
               For parcels less than 20kg’s and worth less than R2000.00
             </p>
+            <button className="mt-4 px-2 py-1 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded">
+              Learn More
+            </button>
           </div>
 
           <div className="rounded-lg bg-[#1A1F35] p-6">
@@ -60,6 +67,9 @@ export default function Features() {
             <p className="text-gray-400">
               Latest model vehicles maintained to the highest standards.
             </p>
+            <button className="mt-4 px-2 py-1 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded">
+              Learn More
+            </button>
           </div>
         </div>
       </div>
