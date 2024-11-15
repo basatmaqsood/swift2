@@ -2,27 +2,26 @@
 import React, { useEffect, useState } from 'react';
 import { Briefcase, TrendingUp, Users, ArrowRight, Shield } from 'lucide-react';
 
-// Data structure for job categories
 const jobCategories = [
   {
     title: "Safety Officers",
     description: "Armed response and emergency support specialists",
-    icon: <Shield className="w-6 h-6" />
+    icon: <Shield className="w-8 h-8" />
   },
   {
     title: "Operations",
     description: "Support roles ensuring smooth service delivery",
-    icon: <TrendingUp className="w-6 h-6" />
+    icon: <TrendingUp className="w-8 h-8" />
   },
   {
     title: "Customer Support",
     description: "Dedicated team providing excellent service",
-    icon: <Users className="w-6 h-6" />
+    icon: <Users className="w-8 h-8" />
   },
   {
     title: "Management",
     description: "Leadership roles driving growth and innovation",
-    icon: <Briefcase className="w-6 h-6" />
+    icon: <Briefcase className="w-8 h-8" />
   }
 ];
 
@@ -30,7 +29,6 @@ const MissionSection = () => {
   const [count, setCount] = useState(0);
   const [isInView, setIsInView] = useState(false);
 
-  // Intersection Observer setup
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -42,22 +40,19 @@ const MissionSection = () => {
     );
 
     const counterElement = document.getElementById('counter-section');
-    if (counterElement) {
-      observer.observe(counterElement);
-    }
+    if (counterElement) observer.observe(counterElement);
 
     return () => observer.disconnect();
   }, []);
 
-  // Counter animation
   useEffect(() => {
     if (isInView) {
-      const duration = 2000; // Animation duration in milliseconds
-      const steps = 50;
+      let current = 0;
+      const duration = 2000; // Animation duration in ms
+      const steps = 50; // Number of steps for the counter
       const increment = 1000 / steps;
       const stepTime = duration / steps;
 
-      let current = 0;
       const timer = setInterval(() => {
         current += increment;
         if (current >= 1000) {
@@ -73,8 +68,62 @@ const MissionSection = () => {
   }, [isInView]);
 
   return (
-    <div className="bg-white py-24">
-      {/* Component JSX remains the same as previous artifact */}
+    <div className="bg-gray-50 py-16 px-4" id="counter-section">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Our Mission at Swift<span className="text-yellow-400">!</span>
+          </h2>
+          <p className="text-lg text-gray-600">
+            Empowering people with secure, reliable, and efficient services.
+          </p>
+        </div>
+
+        {/* Counter */}
+        <div className="text-center mb-16">
+          <h3 className="text-5xl font-bold text-yellow-400">
+            {count}+
+          </h3>
+          <p className="text-xl text-gray-700">
+            Jobs Created
+          </p>
+        </div>
+
+        {/* Job Categories Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {jobCategories.map((category, index) => (
+            <div
+              key={index}
+              className="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              {/* Icon */}
+              <div className="bg-yellow-400 rounded-2xl p-4 inline-flex items-center justify-center mb-6">
+                {React.cloneElement(category.icon, { className: "text-gray-900" })}
+              </div>
+
+              {/* Content */}
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {category.title}
+              </h3>
+              <p className="text-gray-600 text-lg">
+                {category.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <a
+            href="/careers"
+            className="inline-flex items-center bg-yellow-400 text-gray-900 font-bold px-6 py-3 rounded-lg text-lg shadow-md hover:shadow-lg transition-all duration-300"
+          >
+            Join Our Team
+            <ArrowRight className="w-6 h-6 ml-2" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
