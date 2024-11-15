@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import image from "../images/1.png";
+import image from "../images/mockupswift.jpg"
 import googlePlay from "../images/googleplay.png";
 import appstore from "../images/appstore.jpg";
 
