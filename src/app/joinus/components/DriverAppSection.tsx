@@ -8,7 +8,6 @@ import {
   Instagram, 
   Twitter, 
   MapPin,
-  ArrowRight,
   Shield,
   Clock,
   DollarSign

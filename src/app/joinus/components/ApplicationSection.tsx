@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { UserCircle, Car, FileCheck, Shield, ChevronRight, Upload, CheckCircle, AlertCircle } from 'lucide-react';
+import { UserCircle, Car, FileCheck,  ChevronRight, CheckCircle, AlertCircle } from 'lucide-react';
 import { useForm, SubmitHandler } from 'react-hook-form'
 
 type FormData = {
@@ -54,6 +54,7 @@ const ApplicationSection = () => {
     console.log(data)
     alert('Application submitted successfully!')
     reset()
+    console.log(applicationType);
   }
 
   const nextStep = () => setCurrentStep((prev) => Math.min(prev + 1, steps.length - 1))

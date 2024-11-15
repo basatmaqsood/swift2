@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { Shield, Percent, Users, Car, Wallet, CircleDollarSign, BadgeHelp, ArrowRight } from 'lucide-react';
+import { Shield, Percent, Users, Car,  CircleDollarSign, BadgeHelp, ArrowRight } from 'lucide-react';
 import supportimg from '../../images/3.png'
 import Image from 'next/image';
 
