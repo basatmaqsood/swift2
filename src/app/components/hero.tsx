@@ -95,16 +95,16 @@ const Hero = () => {
           <div className="max-w-7xl mx-auto px-6 md:mx-0 md:px-16 pt-20">
             <div className="max-w-2xl">
               <h1 className="text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
-                Moving
+                Proudly
                 <div className="inline-block">
                   <span className="text-green-600 bg-clip-text"> South </span>
-                  <span className="text-yellow-500 bg-clip-text">Africa</span>
+                  <span className="text-yellow-500 bg-clip-text">African</span>
                 </div>
-                <span className="block">Forward</span>
+                <span className="block">Ride-Sharing Platform</span>
               </h1>
 
               <p className="text-xl text-gray-300 mb-8">
-                Your safe ride home, just a tap away.
+                Experience safer, smarter transportation with South Africa&apos;s most innovative e-hailing service.
               </p>
 
               <div className="flex items-center space-x-4">
