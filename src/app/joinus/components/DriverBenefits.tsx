@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import { Shield, Percent, Users, Car,  CircleDollarSign, BadgeHelp, ArrowRight } from 'lucide-react';
-import supportimg from '../../images/3.png'
+import supportimg from '../../images/support.jpg'
 import Image from 'next/image';
 
 const DriverBenefits = () => {
@@ -87,7 +87,7 @@ const DriverBenefits = () => {
         <div className="bg-black rounded-3xl overflow-hidden mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Image Section */}
-            <div className="relative h-64 lg:h-auto">
+            <div className="relative h-64 w-auto lg:h-auto">
               <Image 
                 src={supportimg}
                 alt="Swift Support Team" 
@@ -154,7 +154,7 @@ const DriverBenefits = () => {
         <div className="text-center">
           <div className="inline-block bg-black rounded-2xl p-1">
             <button 
-              onClick={() => window.location.href = '/driver-application'}
+              onClick={() => window.location.href = '/joinus#registerForm'}
               className="group bg-black hover:bg-yellow-400 text-white hover:text-black px-8 py-4 rounded-xl font-medium text-lg transition-all duration-300 flex items-center space-x-2"
             >
               <span>Start Your Application</span>

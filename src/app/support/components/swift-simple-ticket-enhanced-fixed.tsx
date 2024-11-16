@@ -57,7 +57,7 @@ function SimpleTicketSystem ()  {
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-gray-800 py-16 relative overflow-hidden">
+    <div className="bg-gradient-to-b from-gray-900 to-gray-800 py-16 relative overflow-hidden" id='ticket'>
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-yellow-400/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 translate-x-1/2 translate-y-1/2 bg-yellow-400/5 rounded-full blur-3xl" />

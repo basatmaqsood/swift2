@@ -1,7 +1,7 @@
 // QualitySection.jsx
 import React from 'react';
 import { Star, Shield, Wallet, Users, ArrowRight } from 'lucide-react';
-import image from '../images/User.png'
+import image from '../images/CollectionPoint.png'
 import Image from 'next/image';
 
 // Data structure for features
@@ -97,9 +97,8 @@ const QualitySection = () => {
             <Image 
               src={image}
               alt="Swift Quality Service" 
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
           </div>
         </div>
 

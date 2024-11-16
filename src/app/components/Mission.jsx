@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import { Briefcase, TrendingUp, Users, ArrowRight, Shield } from 'lucide-react';
+import Link from 'next/link';
 
 const jobCategories = [
   {
@@ -82,11 +83,12 @@ const MissionSection = () => {
 
         {/* Counter */}
         <div className="text-center mb-16">
-          <h3 className="text-5xl font-bold text-yellow-400">
+          <h4 className='text-3xl font-md text-gray-700'>We aim to Create</h4>
+          <h3 className="text-6xl font-bold text-yellow-400 my-2">
             {count}+
           </h3>
-          <p className="text-xl text-gray-700">
-            Jobs Created
+          <p className="text-3xl text-gray-700">
+            Jobs
           </p>
         </div>
 
@@ -115,13 +117,13 @@ const MissionSection = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <a
-            href="/careers"
+          <Link
+            href="#"
             className="inline-flex items-center bg-yellow-400 text-gray-900 font-bold px-6 py-3 rounded-lg text-lg shadow-md hover:shadow-lg transition-all duration-300"
           >
             Join Our Team
             <ArrowRight className="w-6 h-6 ml-2" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

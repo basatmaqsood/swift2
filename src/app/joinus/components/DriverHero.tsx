@@ -43,12 +43,15 @@ const DriverHero = () => {
 
           {/* Right: Actions */}
           <div className="flex items-center space-x-4">
-            <button className="text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-colors">
+            <Link href='/support' className="hidden md:block text-white hover:bg-gray-800 px-4 py-2 rounded-lg">
+              Support
+            </Link>
+            <Link href='#' className="text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-colors">
               Login
-            </button>
-            <button className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-300">
+            </Link>
+            <Link href='/joinus' className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-300">
               Register to Drive
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -67,7 +70,7 @@ const DriverHero = () => {
 
         {/* Content */}
         <div className="relative h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-6 py-24">
+          <div className="max-w-7xl mx-auto  lg:mx-16 px-6 py-32">
             <div className="max-w-2xl">
               <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
                 Your Journey to
@@ -81,32 +84,32 @@ const DriverHero = () => {
 
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-6 mb-8">
-                <div className="bg-black/50 backdrop-blur-sm rounded-xl p-4 border border-gray-800">
+                <div className="bg-black/50 backdrop-blur-sm rounded-xl p-2 lg:p-4 border border-gray-800">
                   <Wallet className="w-6 h-6 text-yellow-400 mb-2" />
-                  <div className="text-2xl font-bold text-white">R5k+</div>
+                  <div className="text-xl lg:text-2xl font-bold text-white">R5k+</div>
                   <p className="text-gray-400 text-sm">Weekly Earnings</p>
                 </div>
-                <div className="bg-black/50 backdrop-blur-sm rounded-xl p-4 border border-gray-800">
+                <div className="bg-black/50 backdrop-blur-sm rounded-xl p-2 lg:p-4 border border-gray-800">
                   <Clock className="w-6 h-6 text-yellow-400 mb-2" />
-                  <div className="text-2xl font-bold text-white">Flexible</div>
+                  <div className="text-xl lg:text-2xl font-bold text-white">Flexible</div>
                   <p className="text-gray-400 text-sm">Working Hours</p>
                 </div>
-                <div className="bg-black/50 backdrop-blur-sm rounded-xl p-4 border border-gray-800">
+                <div className="bg-black/50 backdrop-blur-sm rounded-xl p-2 lg:p-4 border border-gray-800">
                   <Shield className="w-6 h-6 text-yellow-400 mb-2" />
-                  <div className="text-2xl font-bold text-white">24/7</div>
+                  <div className="text-xl lg:text-2xl font-bold text-white">24/7</div>
                   <p className="text-gray-400 text-sm">Driver Support</p>
                 </div>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex items-center space-x-4">
-                <button className="bg-yellow-400 text-black px-8 py-4 rounded-xl font-medium text-lg hover:bg-yellow-300 transition-colors flex items-center">
+                <Link href="/joinus#registerForm" className="bg-yellow-400 text-black px-2 md:px-8 py-4 rounded-xl font-medium text-lg hover:bg-yellow-300 transition-colors flex items-center">
                   <span>Start Earning Today</span>
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </button>
-                <button className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-medium text-lg hover:bg-white/20 transition-colors">
+                </Link>
+                <Link href="#" className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-medium text-lg hover:bg-white/20 transition-colors">
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           </div>

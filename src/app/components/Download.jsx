@@ -13,33 +13,33 @@ import {
 import Image from 'next/image';
 import playStore from '../images/googleplay.png'
 import AppStore from '../images/appstore.jpg'
-import mockup from '../images/feature-cities-for-people.webp'
+import mockup from '../images/downloadApp.jpg'
 
 const DownloadAndFooter = () => {
   const footerLinks = {
     company: [
-      { title: 'About Us', href: '/about' },
-      { title: 'Careers', href: '/careers' },
-      { title: 'Press', href: '/press' },
-      { title: 'Blog', href: '/blog' }
+      { title: 'About Us', href: '/' },
+      { title: 'Careers', href: '/' },
+      { title: 'Press', href: '/' },
+      { title: 'Blog', href: '/' }
     ],
     legal: [
-      { title: 'Terms of Service', href: '/terms' },
-      { title: 'Privacy Policy', href: '/privacy' },
-      { title: 'Cookie Policy', href: '/cookies' },
-      { title: 'Disclaimer', href: '/disclaimer' }
+      { title: 'Terms of Service', href: '/' },
+      { title: 'Privacy Policy', href: '/' },
+      { title: 'Cookie Policy', href: '/' },
+      { title: 'Disclaimer', href: '/' }
     ],
     support: [
-      { title: 'Help Center', href: '/help' },
-      { title: 'Safety', href: '/safety' },
-      { title: 'Lost & Found', href: '/lost-found' },
-      { title: 'Contact Us', href: '/contact' }
+      { title: 'Help Center', href: '/' },
+      { title: 'Safety', href: '/' },
+      { title: 'Lost & Found', href: '/' },
+      { title: 'Contact Us', href: '/' }
     ],
     cities: [
-      { title: 'Johannesburg', href: '/cities/johannesburg' },
-      { title: 'Cape Town', href: '/cities/cape-town' },
-      { title: 'Durban', href: '/cities/durban' },
-      { title: 'Pretoria', href: '/cities/pretoria' }
+      { title: 'Johannesburg', href: '/' },
+      { title: 'Cape Town', href: '/' },
+      { title: 'Durban', href: '/' },
+      { title: 'Pretoria', href: '/' }
     ]
   };
 
@@ -62,21 +62,12 @@ const DownloadAndFooter = () => {
 
             {/* App Mockup Placeholder - Full Width */}
             <div className="relative mb-12">
-              <div className="aspect-[16/9] bg-gray-100 rounded-2xl overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <div className="w-16 h-16 bg-gray-200 rounded-full mb-4 mx-auto flex items-center justify-center">
-                      <Smartphone className="w-8 h-8 text-gray-400" />
-                    </div>
-                    <p className="text-gray-400 text-sm">App interface showcase placement</p>
-                    <p className="text-gray-400 text-xs mt-2">Recommended size: 1920x1080px</p>
-                  </div>
-                </div>
+              <div className=" bg-gray-100 rounded-2xl overflow-hidden">
                 {/* Actual image will replace this placeholder */}
                 <Image
                   src={mockup} 
                   alt="Swift App Interface" 
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className=" h-full w-full object-cover inset-0"
                 />
               </div>
             </div>
@@ -84,12 +75,12 @@ const DownloadAndFooter = () => {
             {/* Stats Row */}
             <div className="grid grid-cols-2 gap-8 mb-12 max-w-md mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900 mb-2">1M+</div>
-                <p className="text-gray-600">Happy Riders</p>
+                <div className="text-4xl font-bold text-gray-900 mb-2">1M+</div>
+                <p className="text-gray-600 text-2xl">Happy Riders</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900 mb-2">50+</div>
-                <p className="text-gray-600">Cities Nationwide</p>
+                <div className="text-4xl font-bold text-gray-900 mb-2">50+</div>
+                <p className="text-gray-600 text-2xl">Cities Nationwide</p>
               </div>
             </div>
 

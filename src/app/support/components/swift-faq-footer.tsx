@@ -156,8 +156,8 @@ const FAQSection = () => {
                   Swift<span className="text-yellow-400">!</span>
                 </h3>
                 <p className="text-gray-600 mt-2">
-                  South Africa&apos;s most innovative e-hailing service.
                 </p>
+                  South Africa&apos/s most innovative e-hailing service.
               </div>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3 text-gray-600">
@@ -181,10 +181,10 @@ const FAQSection = () => {
                 Company
               </h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">About</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Careers</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Press</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Blog</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Careers</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">About</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Press</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Blog</a></li>
               </ul>
             </div>
 
@@ -193,22 +193,33 @@ const FAQSection = () => {
                 Support
               </h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Help Center</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Safety</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Legal</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Contact</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Help Center</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Safety</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Legal</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Contact</a></li>
               </ul>
             </div>
 
             <div>
               <h4 className="text-gray-900 font-semibold mb-4 uppercase text-sm">
+                Legal
+              </h4>
+              <ul className="space-y-3">
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Terms of Service</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Privacy Policy</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Cookie Policy</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Disclaimer</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-gray-900 font-semibold mb-4 uppercase text-sm">
                 Cities
               </h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Johannesburg</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Cape Town</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Durban</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-900">Pretoria</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Johannesburg</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Cape Town</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Durban</a></li>
+                <li><a href="/" className="text-gray-600 hover:text-gray-900">Pretoria</a></li>
               </ul>
             </div>
           </div>

@@ -15,7 +15,7 @@ import {
 import Image from 'next/image';
 import playstore from '../../images/googleplay.png'
 import appstore from '../../images/appstore.jpg'
-import appPreview from '../../images/mockupswift.jpg'
+import appPreview from '../../images/DriverApp.png'
 import Link from 'next/link';
 const DriverAppSection = () => {
   const features = [
@@ -38,28 +38,28 @@ const DriverAppSection = () => {
 
   const footerLinks = {
     company: [
-      { title: 'About Us', href: '/about' },
-      { title: 'Careers', href: '/careers' },
-      { title: 'Press', href: '/press' },
-      { title: 'Blog', href: '/blog' }
+      { title: 'About Us', href: '/' },
+      { title: 'Careers', href: '/' },
+      { title: 'Press', href: '/' },
+      { title: 'Blog', href: '/' }
     ],
     legal: [
-      { title: 'Terms of Service', href: '/terms' },
-      { title: 'Privacy Policy', href: '/privacy' },
-      { title: 'Cookie Policy', href: '/cookies' },
-      { title: 'Disclaimer', href: '/disclaimer' }
+      { title: 'Terms of Service', href: '/' },
+      { title: 'Privacy Policy', href: '/' },
+      { title: 'Cookie Policy', href: '/' },
+      { title: 'Disclaimer', href: '/' }
     ],
     support: [
-      { title: 'Help Center', href: '/help' },
-      { title: 'Safety', href: '/safety' },
-      { title: 'Lost & Found', href: '/lost-found' },
-      { title: 'Contact Us', href: '/contact' }
+      { title: 'Help Center', href: '/' },
+      { title: 'Safety', href: '/' },
+      { title: 'Lost & Found', href: '/' },
+      { title: 'Contact Us', href: '/' }
     ],
     cities: [
-      { title: 'Johannesburg', href: '/cities/johannesburg' },
-      { title: 'Cape Town', href: '/cape-town' },
-      { title: 'Durban', href: '/durban' },
-      { title: 'Pretoria', href: '/pretoria' }
+      { title: 'Johannesburg', href: '/' },
+      { title: 'Cape Town', href: '/' },
+      { title: 'Durban', href: '/' },
+      { title: 'Pretoria', href: '/' }
     ]
   };
 
@@ -130,24 +130,18 @@ const DriverAppSection = () => {
 
             {/* App Preview Image */}
             <div className="relative">
-              <div className="aspect-[9/16] bg-gray-800/50 backdrop-blur-sm rounded-3xl overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <div className="w-16 h-16 bg-gray-700 rounded-full mb-4 mx-auto flex items-center justify-center">
-                      <Phone className="w-8 h-8 text-gray-400" />
-                    </div>
-                    <p className="text-gray-400 text-sm">Driver App Preview</p>
-                    <p className="text-gray-500 text-xs mt-2">App screenshot placement</p>
-                  </div>
+              {/* <div className="aspect-auto  backdrop-blur-sm rounded-3xl overflow-hidden"> */}
+                <div className=" flex items-center justify-center">
+                  
                 </div>
                 {/* Actual image will replace this placeholder */}
                 < Image
                   src = {appPreview}
                   alt="Swift Driver App" 
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </section>

@@ -488,7 +488,7 @@ const ApplicationSection = () => {
   };
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-24" id='registerForm'>
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">

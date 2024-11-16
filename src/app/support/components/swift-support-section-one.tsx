@@ -15,7 +15,7 @@ const SupportSectionOne = () => {
       icon: <UserCircle className="w-6 h-6" />,
       title: "Rider Support",
       description: "Get help with your rides, payments, and account",
-      link: "/support/riders",
+      link: "/support#ticket",
       commonIssues: [
         "Track current ride",
         "Payment methods",
@@ -26,7 +26,7 @@ const SupportSectionOne = () => {
       icon: <Car className="w-6 h-6" />,
       title: "Driver Support",
       description: "Access driver-specific support and resources",
-      link: "/support/drivers",
+      link: "/support#ticket",
       commonIssues: [
         "Earnings support",
         "Vehicle assistance",
@@ -37,7 +37,7 @@ const SupportSectionOne = () => {
       icon: <Package className="w-6 h-6" />,
       title: "Delivery Support",
       description: "Resolve delivery-related queries and tracking",
-      link: "/support/delivery",
+      link: "/support#ticket",
       commonIssues: [
         "Track package",
         "Delivery status",
@@ -77,9 +77,9 @@ const SupportSectionOne = () => {
               <button className="text-gray-300 hover:text-white px-4 py-2 rounded-lg transition-colors">
                 Login
               </button>
-              <button className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg font-medium hover:bg-yellow-300">
+              <Link href='/joinus' className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg font-medium hover:bg-yellow-300">
                 Register
-              </button>
+              </Link>
             </div>
           </div>
         </div>
