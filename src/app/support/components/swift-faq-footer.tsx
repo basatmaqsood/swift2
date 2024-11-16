@@ -9,6 +9,7 @@ import {
   Twitter, 
   MapPin
 } from 'lucide-react';
+import Link from 'next/link';
 
 const FAQSection = () => {
   const [activeRiderFaq, setActiveRiderFaq] = useState<number | null>(null);
@@ -181,10 +182,10 @@ const FAQSection = () => {
                 Company
               </h4>
               <ul className="space-y-3">
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Careers</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">About</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Press</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Blog</a></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Careers</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">About</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Press</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Blog</Link></li>
               </ul>
             </div>
 
@@ -193,10 +194,10 @@ const FAQSection = () => {
                 Support
               </h4>
               <ul className="space-y-3">
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Help Center</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Safety</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Legal</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Contact</a></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Help Center</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Safety</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Legal</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Contact</Link></li>
               </ul>
             </div>
 
@@ -205,10 +206,10 @@ const FAQSection = () => {
                 Legal
               </h4>
               <ul className="space-y-3">
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Terms of Service</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Privacy Policy</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Cookie Policy</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Disclaimer</a></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Terms of Service</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Privacy Policy</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Cookie Policy</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Disclaimer</Link></li>
               </ul>
             </div>
             <div>
@@ -216,10 +217,10 @@ const FAQSection = () => {
                 Cities
               </h4>
               <ul className="space-y-3">
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Johannesburg</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Cape Town</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Durban</a></li>
-                <li><a href="/" className="text-gray-600 hover:text-gray-900">Pretoria</a></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Johannesburg</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Cape Town</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Durban</Link></li>
+                <li><Link href="/" className="text-gray-600 hover:text-gray-900">Pretoria</Link></li>
               </ul>
             </div>
           </div>
@@ -235,15 +236,15 @@ const FAQSection = () => {
               
               {/* Social Links */}
               <div className="flex space-x-6">
-                <a href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
+                <Link href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
                   <Facebook className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
+                </Link>
+                <Link href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
                   <Instagram className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
+                </Link>
+                <Link href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
                   <Twitter className="w-5 h-5" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

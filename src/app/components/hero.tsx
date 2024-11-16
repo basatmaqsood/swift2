@@ -1,7 +1,7 @@
 // HeroSection.jsx
 'use client'
 import React, { useState } from 'react';
-import { ChevronDown, Menu, Globe, Grid,MenuIcon } from 'lucide-react';
+import { ChevronDown, Menu, Globe, MenuIcon } from 'lucide-react';
 import background from '../images/2.png';
 import Image from 'next/image';
 import Link from 'next/link';

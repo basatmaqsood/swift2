@@ -6,8 +6,7 @@ import {
   Facebook, 
   Instagram, 
   Twitter, 
-  MapPin,
-  Smartphone
+  MapPin
 } from 'lucide-react';
 
 import Image from 'next/image';

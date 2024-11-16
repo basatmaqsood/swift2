@@ -2,7 +2,6 @@ import React from "react";
 import {
   ShieldAlert,
   MessageSquare,
-  Clock,
   ArrowRight,
   Shield,
   Package,
