@@ -15,7 +15,6 @@ import {
 } from 'lucide-react';
 
 const PoliciesComplianceSection = () => {
-  const [activeDocument, setActiveDocument] = useState(null);
 
   const legalDocuments = [
     {

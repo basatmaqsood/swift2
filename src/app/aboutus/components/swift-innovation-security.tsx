@@ -13,7 +13,6 @@ import {
 
 const InnovationSection = () => {
   const [currentStat, setCurrentStat] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
 
   const industryStats = [
     {
@@ -75,7 +74,6 @@ const InnovationSection = () => {
   ];
 
   useEffect(() => {
-    setIsVisible(true);
     const interval = setInterval(() => {
       setCurrentStat((prev) => (prev + 1) % industryStats.length);
     }, 3000);

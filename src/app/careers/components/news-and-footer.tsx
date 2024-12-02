@@ -93,7 +93,7 @@ const NewsAndFooter = () => {
               News & Updates<span className="text-yellow-400">.</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Stay informed about Swift's latest developments, community initiatives, and security updates
+              Stay informed about Swift&apos;s latest developments, community initiatives, and security updates
             </p>
           </div>
 
@@ -217,7 +217,7 @@ const NewsAndFooter = () => {
                   Swift<span className="text-yellow-400">!</span>
                 </h3>
                 <p className="text-gray-600 mt-2">
-                  South Africa's most trusted mobility platform, committed to safety and community growth.
+                  South Africa&apos;s most trusted mobility platform, committed to safety and community growth.
                 </p>
               </div>
               <div className="space-y-4">
@@ -264,7 +264,7 @@ const NewsAndFooter = () => {
           <div className="max-w-7xl mx-auto px-6 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-600 text-sm mb-4 md:mb-0">
-                © {new Date().getFullYear()} Swift! All rights reserved.
+                &copy; {new Date().getFullYear()} Swift! All rights reserved.
               </div>
               
               {/* Social Links */}

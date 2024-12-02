@@ -9,6 +9,7 @@ import {
   CheckCircle,
   ChevronRight
 } from 'lucide-react';
+import Image from 'next/image';
 
 const EqualOpportunitiesSection = () => {
   const commitments = [
@@ -121,9 +122,9 @@ const EqualOpportunitiesSection = () => {
                 Our Commitment to South Africa
               </h3>
               <p className="text-gray-300 mb-8">
-                We're dedicated to creating meaningful employment opportunities that reflect 
+                We&apos;re dedicated to creating meaningful employment opportunities that reflect 
                 the diversity of our nation. Through inclusive hiring practices and continuous 
-                development programs, we're building a workforce that represents all South Africans.
+                development programs, we&apos;re building a workforce that represents all South Africans.
               </p>
               <ul className="space-y-4">
                 {[
@@ -140,7 +141,7 @@ const EqualOpportunitiesSection = () => {
               </ul>
             </div>
             <div className="relative h-full min-h-[400px]">
-              <img 
+              <Image
                 src="/api/placeholder/800/600" 
                 alt="Diversity at Swift"
                 className="absolute inset-0 w-full h-full object-cover"
@@ -170,7 +171,7 @@ const EqualOpportunitiesSection = () => {
           </h3>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Be part of a company that values your unique perspective and contribution. 
-            We're always looking for talented individuals to join our team.
+            We&apos;re always looking for talented individuals to join our team.
           </p>
           <button className="inline-flex items-center bg-black text-white px-8 py-4 rounded-xl 
             font-medium hover:bg-yellow-400 hover:text-black transition-all duration-300 group">

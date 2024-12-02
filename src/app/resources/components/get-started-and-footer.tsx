@@ -110,7 +110,7 @@ const GetStartedAndFooter = () => {
               Ready to Join Swift<span className="text-yellow-400">!</span>?
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Follow these simple steps to begin your journey with South Africa's most 
+              Follow these simple steps to begin your journey with South Africa&apos;s most 
               innovative e-hailing platform.
             </p>
           </div>
@@ -182,7 +182,7 @@ const GetStartedAndFooter = () => {
                   Swift<span className="text-yellow-400">!</span>
                 </h3>
                 <p className="text-gray-600 mt-2">
-                  South Africa's most innovative e-hailing service, committed to safety,
+                  South Africa&apos;s most innovative e-hailing service, committed to safety,
                   reliability, and driver success.
                 </p>
               </div>

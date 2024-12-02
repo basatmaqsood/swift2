@@ -51,7 +51,7 @@ const Footer = () => {
                 Swift<span className="text-yellow-400">!</span>
               </h3>
               <p className="text-gray-600 mt-2">
-                South Africa's most innovative e-hailing service. 
+                South Africa&apos;s most innovative e-hailing service. 
                 Setting new standards in safety and service excellence.
               </p>
             </div>

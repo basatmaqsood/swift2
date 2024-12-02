@@ -15,8 +15,6 @@ import Link from 'next/link';
 const ResourcesHeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(null);
-
   const quickAccess = [
     {
       icon: <BookOpen className="w-6 h-6" />,

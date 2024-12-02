@@ -12,7 +12,6 @@ import {
 } from 'lucide-react';
 
 const SafetySecuritySection = () => {
-  const [activeTab, setActiveTab] = useState('emergency');
 
   const emergencyContacts = {
     swift: "0800 SWIFT SA",
