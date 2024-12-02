@@ -504,7 +504,7 @@ const ApplicationSection = () => {
         </div>
 
         {/* Progress Steps */}
-        <div className="mb-12">
+        <div className="mb-12 hidden md:block">
           <div className="flex justify-between max-w-4xl mx-auto">
             {steps.map((step, index) => (
               <div 

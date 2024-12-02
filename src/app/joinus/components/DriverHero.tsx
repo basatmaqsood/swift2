@@ -20,7 +20,7 @@ const DriverHero = () => {
               S<span className="text-yellow-400">!</span>
             </Link>
 
-            <div className="relative">
+            <div className="relative hidden md:block">
               <button
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                 className="flex items-center space-x-2 bg-gray-900 text-white px-3 py-2 rounded-lg hover:bg-gray-800"
@@ -46,9 +46,7 @@ const DriverHero = () => {
             <Link href='/support' className="hidden md:block text-white hover:bg-gray-800 px-4 py-2 rounded-lg">
               Support
             </Link>
-            <Link href='#' className="text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-colors">
-              Login
-            </Link>
+
             <Link href='/joinus' className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-300">
               Register to Drive
             </Link>
@@ -107,7 +105,7 @@ const DriverHero = () => {
                   <span>Start Earning Today</span>
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
-                <Link href="#" className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-medium text-lg hover:bg-white/20 transition-colors">
+                <Link href="#" className="hidden md:block bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-medium text-lg hover:bg-white/20 transition-colors">
                   Learn More
                 </Link>
               </div>
