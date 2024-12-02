@@ -74,9 +74,6 @@ const SupportSectionOne = () => {
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">About</a>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Contact</a>
               </nav>
-              <button className="text-gray-300 hover:text-white px-4 py-2 rounded-lg transition-colors">
-                Login
-              </button>
               <Link href='/joinus' className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg font-medium hover:bg-yellow-300">
                 Register
               </Link>
