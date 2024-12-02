@@ -21,7 +21,7 @@ const Hero = () => {
               Swift<span className="text-yellow-400">!</span>
             </Link>
 
-            <div className="relative">
+            <div className="relative hidden md:block">
               <button
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                 className="flex items-center space-x-2 bg-gray-800 text-white px-3 py-2 rounded-lg hover:bg-gray-700"
@@ -51,7 +51,7 @@ const Hero = () => {
               Register
             </Link>
             {/* Waffle Tab */}
-            <div className="relative hidden md:block">
+            <div className="relative md:block">
               
               <button
                 onClick={() => setIsWaffleMenuOpen(!isWaffleMenuOpen)}
@@ -70,9 +70,7 @@ const Hero = () => {
             </div>
 
             
-            <button className="md:hidden text-white">
-              <Menu className="w-6 h-6" />
-            </button>
+
           </div>
         </div>
       </nav>
@@ -93,7 +91,7 @@ const Hero = () => {
         <div className="relative h-full flex items-center">
           <div className="max-w-7xl mx-auto px-6 md:mx-0 md:px-16 pt-20">
             <div className="max-w-2xl">
-              <h1 className="text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
+              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
                 Proudly
                 <div className="inline-block">
                   <span className="text-green-600 bg-clip-text"> South </span>
