@@ -19,7 +19,6 @@ const AboutHeroComplete = () => {
   const [activeMetric, setActiveMetric] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
 
   // South African cities coverage
   const cities = ['Johannesburg', 'Cape Town', 'Durban', 'Pretoria'];
@@ -188,12 +187,6 @@ const AboutHeroComplete = () => {
           </div>
         )}
       </nav>
-
-      {/* Progress Bar */}
-      <div 
-        className="fixed top-0 left-0 h-1 bg-yellow-400 z-50 transition-all duration-300"
-        style={{ width: `${scrollProgress}%` }}
-      />
 
       {/* Background Elements */}
       <div className="absolute inset-0">
