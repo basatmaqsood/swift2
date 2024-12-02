@@ -70,7 +70,7 @@ const RecruitmentProcess = () => {
           {steps.map((step, index) => (
             <div 
               key={index}
-              className={`flex items-center gap-16 ${
+              className={`flex items-center flex-col md:flex-row gap-16 ${
                 index % 2 === 1 ? 'flex-row-reverse' : ''
               }`}
             >

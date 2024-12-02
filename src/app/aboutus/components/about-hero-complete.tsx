@@ -7,18 +7,19 @@ import {
   Activity,
   ChevronRight,
   ChevronDown,
-  Menu,
   Users,
   MapPin,
-  Clock
+  Clock,
+  Globe,
+  MenuIcon
 } from 'lucide-react';
 import Link from 'next/link';
 
 const AboutHeroComplete = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeMetric, setActiveMetric] = useState(0);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const [isWaffleMenuOpen, setIsWaffleMenuOpen] = useState(false)
 
   // South African cities coverage
   const cities = ['Johannesburg', 'Cape Town', 'Durban', 'Pretoria'];
@@ -94,98 +95,67 @@ const AboutHeroComplete = () => {
   return (
     <div className="relative min-h-screen bg-black overflow-hidden">
       {/* Fixed Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-black/95 border-b border-gray-800 px-6 py-4 z-50 backdrop-blur-sm">
+      {/* Fixed Navigation */}
+      <nav className="fixed w-full bg-gray-900/95 border-b border-gray-800 px-6 py-4 z-50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Left: Logo and Language */}
           <div className="flex items-center space-x-6">
-            <Link href="/" className="text-2xl font-bold text-white hover:opacity-90 transition-opacity">
+            <Link href="/" className="text-2xl font-bold text-white">
               Swift<span className="text-yellow-400">!</span>
             </Link>
 
-            <div className="relative">
+            <div className="relative hidden md:block">
               <button
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                 className="flex items-center space-x-2 bg-gray-800 text-white px-3 py-2 rounded-lg hover:bg-gray-700"
               >
-                <img 
-                  src="/api/placeholder/20/20" 
-                  alt="SA Flag" 
-                  className="w-5 h-5 rounded"
-                />
+                <Globe className="w-6 h-6" />
                 <span>EN</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
 
               {isLangMenuOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl py-2 w-40">
-                  {['English', 'Afrikaans', 'isiZulu', 'isiXhosa'].map((lang) => (
-                    <Link 
-                      key={lang}
-                      href="#" 
-                      className="block px-4 py-2 text-white hover:bg-gray-700"
-                    >
-                      {lang}
-                    </Link>
-                  ))}
+                <div className="absolute top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl py-2 w-40 z-50">
+                  <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">English</a>
+                  <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">Afrikaans</a>
+                  <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">isiZulu</a>
+                  <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">isiXhosa</a>
                 </div>
               )}
             </div>
           </div>
 
-          {/* Center: Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {['Home', 'About', 'Services', 'Security', 'Careers'].map((item) => (
-              <Link 
-                key={item}
-                href={`/${item.toLowerCase()}`}
-                className={`${
-                  item === 'About' 
-                    ? 'text-yellow-400' 
-                    : 'text-gray-300 hover:text-white'
-                } transition-colors`}
-              >
-                {item}
-              </Link>
-            ))}
-          </div>
-
-          {/* Right: Actions */}
+          {/* Right: Buttons */}
           <div className="flex items-center space-x-4">
-            <button className="hidden md:block text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition-colors">
+          <Link href="/support" className="hidden md:block text-white hover:bg-gray-800 px-4 py-2 rounded-lg">
               Support
-            </button>
-            <button className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-300 transition-colors">
-              Download App
-            </button>
-            <button 
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-white hover:text-yellow-400 transition-colors"
-            >
-              <Menu className="w-6 h-6" />
-            </button>
+            </Link>
+            <Link href="/joinus" className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg font-medium hover:bg-yellow-300">
+              Register
+            </Link>
+            {/* Waffle Tab */}
+            <div className="relative md:block">
+              
+              <button
+                onClick={() => setIsWaffleMenuOpen(!isWaffleMenuOpen)}
+                className="flex items-center bg-gray-800 text-white px-3 py-2 rounded-lg hover:bg-gray-700"
+              >
+                <MenuIcon className="w-6 h-6" />
+              </button>
+
+              {isWaffleMenuOpen && (
+                <div className="absolute right-0 mt-2 bg-gray-800 rounded-lg shadow-xl py-2 w-48 z-50">
+                  <a href="/aboutus" className="block px-4 py-2 text-white hover:bg-gray-700">About</a>
+                  <a href="/resources" className="block px-4 py-2 text-white hover:bg-gray-700">Resources</a>
+                  <a href="/careers" className="block px-4 py-2 text-white hover:bg-gray-700">Careers</a>
+                </div>
+              )}
+            </div>
+
+            
+
           </div>
         </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 border-b border-gray-800 py-4">
-            <div className="max-w-7xl mx-auto px-6 space-y-4">
-              {['Home', 'About', 'Services', 'Security', 'Careers', 'Support'].map((item) => (
-                <Link 
-                  key={item}
-                  href={`/${item.toLowerCase()}`}
-                  className={`block ${
-                    item === 'About' 
-                      ? 'text-yellow-400' 
-                      : 'text-gray-300 hover:text-white'
-                  } transition-colors py-2`}
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
       </nav>
 
       {/* Background Elements */}

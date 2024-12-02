@@ -182,7 +182,7 @@ const OpenPositionsSection = () => {
                           <MapPin className="w-4 h-4 mr-2" />
                           {city.charAt(0).toUpperCase() + city.slice(1)}
                         </div>
-                        <div className="flex items-center">
+                        <div className="hidden md:flex  items-center">
                           <Clock className="w-4 h-4 mr-2" />
                           {position.type}
                         </div>
