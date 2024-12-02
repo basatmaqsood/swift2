@@ -10,7 +10,6 @@ import {
   ChevronRight,
   BanknoteIcon,
 } from 'lucide-react';
-import Image from 'next/image';
 
 const BusinessOperationsSection = () => {
   const [activeRegion, setActiveRegion] = useState('johannesburg');
@@ -315,7 +314,7 @@ const BusinessOperationsSection = () => {
             {/* Coverage Map Placeholder */}
             <div className="mt-8 bg-gray-800 rounded-xl p-4 text-center">
               <div className="aspect-[16/9] relative">
-                <Image
+                <img
                   src="/api/placeholder/1200/675" 
                   alt="Coverage Map"
                   className="rounded-lg w-full h-full object-cover"

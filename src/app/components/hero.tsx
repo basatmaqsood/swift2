@@ -62,10 +62,9 @@ const Hero = () => {
 
               {isWaffleMenuOpen && (
                 <div className="absolute right-0 mt-2 bg-gray-800 rounded-lg shadow-xl py-2 w-48 z-50">
-                  <a href="#drivers" className="block px-4 py-2 text-white hover:bg-gray-700">Drivers</a>
-                  <a href="#safety" className="block px-4 py-2 text-white hover:bg-gray-700">Safety</a>
-                  <a href="#services" className="block px-4 py-2 text-white hover:bg-gray-700">Services</a>
-                  <a href="#about" className="block px-4 py-2 text-white hover:bg-gray-700">About</a>
+                  <a href="/aboutus" className="block px-4 py-2 text-white hover:bg-gray-700">About</a>
+                  <a href="/resources" className="block px-4 py-2 text-white hover:bg-gray-700">Resources</a>
+                  <a href="/careers" className="block px-4 py-2 text-white hover:bg-gray-700">Careers</a>
                 </div>
               )}
             </div>

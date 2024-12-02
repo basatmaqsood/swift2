@@ -83,17 +83,12 @@ const AboutHeroComplete = () => {
     }, 2000);
 
     // Scroll progress
-    const handleScroll = () => {
-      const progress = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      setScrollProgress(progress);
-    };
 
-    window.addEventListener('scroll', handleScroll);
+
 
     return () => {
       clearInterval(metricInterval);
       clearInterval(cityInterval);
-      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 

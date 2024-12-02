@@ -9,7 +9,6 @@ import {
   CheckCircle,
   ChevronRight
 } from 'lucide-react';
-import Image from 'next/image';
 
 const EqualOpportunitiesSection = () => {
   const commitments = [
@@ -141,7 +140,7 @@ const EqualOpportunitiesSection = () => {
               </ul>
             </div>
             <div className="relative h-full min-h-[400px]">
-              <Image
+              <img
                 src="/api/placeholder/800/600" 
                 alt="Diversity at Swift"
                 className="absolute inset-0 w-full h-full object-cover"
