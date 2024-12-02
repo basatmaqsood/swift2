@@ -6,12 +6,9 @@ import {
   Car,
   Radio,
   CheckCircle,
-  AlertCircle,
   Upload,
-  X,
   Send,
 } from 'lucide-react';
-import { Alert, AlertDescription } from '@/components/ui/alert';
 
 type Position = {
   id: string;
@@ -25,7 +22,7 @@ const SecurityRecruitmentSection = () => {
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [documents, setDocuments] = useState<Record<string, File | undefined>>({});
   const [showAlert, setShowAlert] = useState({ show: false, message: '' });
-
+  console.log(showAlert);
   const cities = ['johannesburg', 'cape town', 'durban'];
   const [selectedPosition, setSelectedPosition] = useState<Position | null>(null);
 
