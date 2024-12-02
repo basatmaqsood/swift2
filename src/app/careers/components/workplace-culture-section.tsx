@@ -133,9 +133,8 @@ const WorkplaceCultureSection = () => {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  currentSlide === index ? 'bg-yellow-400 w-4' : 'bg-white/60'
-                }`}
+                className={`w-2 h-2 rounded-full transition-all ${currentSlide === index ? 'bg-yellow-400 w-4' : 'bg-white/60'
+                  }`}
               />
             ))}
           </div>

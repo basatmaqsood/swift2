@@ -8,9 +8,9 @@ import {
   FileText,
   ChevronDown,
   Menu,
-  ExternalLink,
-  ChevronRight
+  ExternalLink
 } from 'lucide-react';
+import Link from 'next/link';
 
 const ResourcesHeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,9 +52,9 @@ const ResourcesHeroSection = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Left: Logo and Language */}
           <div className="flex items-center space-x-6">
-            <a href="/" className="text-2xl font-bold text-white hover:opacity-90 transition-opacity">
+            <Link href="/" className="text-2xl font-bold text-white hover:opacity-90 transition-opacity">
               Swift<span className="text-yellow-400">!</span>
-            </a>
+            </Link>
 
             <div className="relative">
               <button
@@ -72,10 +72,10 @@ const ResourcesHeroSection = () => {
 
               {isLangMenuOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl py-2 w-40">
-                  <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">English</a>
-                  <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">Afrikaans</a>
-                  <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">isiZulu</a>
-                  <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">isiXhosa</a>
+                  <Link href="#" className="block px-4 py-2 text-white hover:bg-gray-700">English</Link>
+                  <Link href="#" className="block px-4 py-2 text-white hover:bg-gray-700">Afrikaans</Link>
+                  <Link href="#" className="block px-4 py-2 text-white hover:bg-gray-700">isiZulu</Link>
+                  <Link href="#" className="block px-4 py-2 text-white hover:bg-gray-700">isiXhosa</Link>
                 </div>
               )}
             </div>
@@ -84,7 +84,7 @@ const ResourcesHeroSection = () => {
           {/* Center: Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {['Home', 'About', 'Services', 'Resources', 'Support'].map((item) => (
-              <a 
+              <Link
                 key={item}
                 href={`/${item.toLowerCase()}`}
                 className={`${
@@ -94,7 +94,7 @@ const ResourcesHeroSection = () => {
                 } transition-colors`}
               >
                 {item}
-              </a>
+              </Link>
             ))}
           </div>
 

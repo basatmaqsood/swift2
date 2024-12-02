@@ -12,6 +12,7 @@ import {
   MapPin,
   Clock
 } from 'lucide-react';
+import Link from 'next/link';
 
 const AboutHeroComplete = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -103,9 +104,9 @@ const AboutHeroComplete = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Left: Logo and Language */}
           <div className="flex items-center space-x-6">
-            <a href="/" className="text-2xl font-bold text-white hover:opacity-90 transition-opacity">
+            <Link href="/" className="text-2xl font-bold text-white hover:opacity-90 transition-opacity">
               Swift<span className="text-yellow-400">!</span>
-            </a>
+            </Link>
 
             <div className="relative">
               <button
@@ -124,13 +125,13 @@ const AboutHeroComplete = () => {
               {isLangMenuOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl py-2 w-40">
                   {['English', 'Afrikaans', 'isiZulu', 'isiXhosa'].map((lang) => (
-                    <a 
+                    <Link 
                       key={lang}
                       href="#" 
                       className="block px-4 py-2 text-white hover:bg-gray-700"
                     >
                       {lang}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -140,7 +141,7 @@ const AboutHeroComplete = () => {
           {/* Center: Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {['Home', 'About', 'Services', 'Security', 'Careers'].map((item) => (
-              <a 
+              <Link 
                 key={item}
                 href={`/${item.toLowerCase()}`}
                 className={`${
@@ -150,7 +151,7 @@ const AboutHeroComplete = () => {
                 } transition-colors`}
               >
                 {item}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -176,7 +177,7 @@ const AboutHeroComplete = () => {
           <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 border-b border-gray-800 py-4">
             <div className="max-w-7xl mx-auto px-6 space-y-4">
               {['Home', 'About', 'Services', 'Security', 'Careers', 'Support'].map((item) => (
-                <a 
+                <Link 
                   key={item}
                   href={`/${item.toLowerCase()}`}
                   className={`block ${
@@ -186,7 +187,7 @@ const AboutHeroComplete = () => {
                   } transition-colors py-2`}
                 >
                   {item}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

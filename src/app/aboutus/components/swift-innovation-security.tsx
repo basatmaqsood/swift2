@@ -4,16 +4,11 @@ import React, { useState, useEffect } from 'react';
 import { 
   Shield, 
   Radio,
-  AlertTriangle,
-  Users,
   TrendingUp,
   Activity,
   ArrowUpRight,
   CheckCircle,
-  MapPin,
   AlertOctagon,
-  Zap,
-  Car
 } from 'lucide-react';
 
 const InnovationSection = () => {

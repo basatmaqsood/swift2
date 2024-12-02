@@ -10,8 +10,6 @@ import {
   ChevronRight,
   BadgeCheck,
   Eye,
-  FileCheck,
-  AlertTriangle,
   CheckCircle,
   HelpCircle
 } from 'lucide-react';

@@ -3,18 +3,12 @@ import React, { useState } from 'react';
 import { 
   Wallet, 
   Clock, 
-  Car,
-  MapPin,
   Calculator,
   CreditCard,
-  TrendingUp,
   Wrench,
   CheckCircle,
   ChevronRight,
-  Building,
-  AlertCircle,
   BanknoteIcon,
-  BarChart
 } from 'lucide-react';
 
 const BusinessOperationsSection = () => {

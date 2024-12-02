@@ -4,7 +4,6 @@ import {
   MapPin, 
   Briefcase, 
   Clock, 
-  ChevronDown, 
   Upload,
   X,
   Send,
@@ -12,10 +11,20 @@ import {
 } from 'lucide-react';
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
+type Position = {
+  id: number;
+  title: string;
+  department: string;
+  type: string;
+  experience: string;
+  description: string;
+  requirements: string[];
+};
+
 const OpenPositionsSection = () => {
   const [selectedCity, setSelectedCity] = useState('all');
-  const [selectedPosition, setSelectedPosition] = useState(null);
-  const [applicationFile, setApplicationFile] = useState(null);
+  const [selectedPosition, setSelectedPosition] = useState<Position | null>(null); // Explicitly define the type
+  const [applicationFile, setApplicationFile] = useState<File | null>(null);
   const [coverLetter, setCoverLetter] = useState('');
   const [showAlert, setShowAlert] = useState(false);
 
@@ -84,8 +93,8 @@ const OpenPositionsSection = () => {
     ]
   };
 
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]; // Safe access to the first file
     if (file && file.type === 'application/pdf') {
       setApplicationFile(file);
     } else {
@@ -93,8 +102,9 @@ const OpenPositionsSection = () => {
       setTimeout(() => setShowAlert(false), 3000);
     }
   };
+  
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     // Handle application submission
     console.log({

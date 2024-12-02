@@ -6,9 +6,6 @@ import {
   Trophy, 
   Brain, 
   Heart, 
-  Zap, 
-  ChevronRight, 
-  Star, 
   CheckCircle 
 } from 'lucide-react';
 

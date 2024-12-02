@@ -2,17 +2,12 @@
 
 import React, { useState } from 'react';
 import { 
-  Shield, 
   Siren, 
-  FileWarning, 
-  Radio,
   AlertTriangle, 
   CheckCircle,
-  PhoneCall,
   Target,
   Bell,
   Eye,
-  MapPin,
   Clock
 } from 'lucide-react';
 

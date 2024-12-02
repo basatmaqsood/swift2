@@ -8,12 +8,8 @@ import {
   Download,
   ChevronRight,
   Search,
-  FileText,
-  BookMarked,
-  ClipboardCheck,
   BadgeCheck,
   AlertCircle,
-  TrendingUp
 } from 'lucide-react';
 
 const DriverResourcesSection = () => {

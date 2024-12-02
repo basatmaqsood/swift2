@@ -9,6 +9,7 @@ import {
   Twitter, 
   MapPin
 } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   const footerLinks = {
@@ -79,12 +80,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.title}>
-                    <a 
+                    <Link 
                       href={link.href}
                       className="text-gray-600 hover:text-gray-900 transition-colors"
                     >
                       {link.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -103,15 +104,15 @@ const Footer = () => {
             
             {/* Social Links */}
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
+              </Link>
+              <Link href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
+              </Link>
+              <Link href="#" className="text-gray-400 hover:text-gray-900 transition-colors">
                 <Twitter className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
