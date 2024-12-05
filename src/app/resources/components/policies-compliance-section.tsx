@@ -13,8 +13,16 @@ import {
   CheckCircle,
   HelpCircle
 } from 'lucide-react';
+import Link from 'next/link';
 
 const PoliciesComplianceSection = () => {
+
+  const handleDownload = (filePath: string) => {
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = filePath.split('/').pop() || 'download';
+    link.click();
+  };
 
   const legalDocuments = [
     {
@@ -32,7 +40,8 @@ const PoliciesComplianceSection = () => {
             "Rights and responsibilities",
             "Payment terms",
             "Termination conditions"
-          ]
+          ],
+          filepath:'/files/driver-service-agreement.pdf'
         },
         {
           title: "Code of Conduct",
@@ -45,7 +54,8 @@ const PoliciesComplianceSection = () => {
             "Customer service standards",
             "Dress code",
             "Communication guidelines"
-          ]
+          ],
+          filepath:'/files/code-of-conduct.pdf'
         }
       ]
     },
@@ -64,7 +74,8 @@ const PoliciesComplianceSection = () => {
             "Claim procedures",
             "Liability limits",
             "Additional protections"
-          ]
+          ],
+          filepath:'/files/insurance-policy-overview.pdf'
         },
         {
           title: "Accident Procedures",
@@ -77,7 +88,8 @@ const PoliciesComplianceSection = () => {
             "Documentation requirements",
             "Contact protocols",
             "Claim filing process"
-          ]
+          ],
+          filepath:'/files/accident-procedures-guide.pdf'
         }
       ]
     },
@@ -96,7 +108,8 @@ const PoliciesComplianceSection = () => {
             "Usage policies",
             "Protection measures",
             "User rights"
-          ]
+          ],
+          filepath:'/files/privacy-policy.pdf'
         },
         {
           title: "Data Handling Guidelines",
@@ -109,7 +122,8 @@ const PoliciesComplianceSection = () => {
             "Storage guidelines",
             "Access controls",
             "Deletion procedures"
-          ]
+          ],
+          filepath:'/files/data-handling-guidelines.pdf'
         }
       ]
     },
@@ -128,7 +142,8 @@ const PoliciesComplianceSection = () => {
             "User obligations",
             "Platform rules",
             "Dispute resolution"
-          ]
+          ],
+          filepath:'/files/platform-terms-of-service.pdf'
         },
         {
           title: "Operating Guidelines",
@@ -141,7 +156,8 @@ const PoliciesComplianceSection = () => {
             "Service areas",
             "Vehicle requirements",
             "Quality standards"
-          ]
+          ],
+          filepath:'/files/operating-guidelines.pdf'
         }
       ]
     }
@@ -239,16 +255,19 @@ const PoliciesComplianceSection = () => {
                     </div>
 
                     <div className="flex justify-between items-center mt-6 pt-4 border-t border-gray-100">
-                      <button className="text-yellow-600 hover:text-yellow-700 font-medium 
-                        flex items-center">
+                      <Link className="text-yellow-600 hover:text-yellow-700 font-medium 
+                        flex items-center" href={doc.filepath} target='_blank'>
                         <Eye className="w-4 h-4 mr-2" />
                         Preview
-                      </button>
-                      <button className="bg-black text-white px-4 py-2 rounded-lg 
-                        hover:bg-gray-800 transition-colors flex items-center">
-                        <Download className="w-4 h-4 mr-2" />
-                        Download
-                      </button>
+                      </Link>
+                      <button
+                  onClick={() => handleDownload(doc.filepath)}
+                  className="inline-flex items-center text-yellow-600 hover:text-yellow-700 
+                  font-medium transition-colors group"
+                >
+                  <Download className="w-5 h-5 mr-2" />
+                  Download
+                </button>
                     </div>
                   </div>
                 ))}
