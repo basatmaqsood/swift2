@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  Smile, 
-  Trophy, 
-  Brain, 
-  Heart, 
-  CheckCircle 
+import {
+  Smile,
+  Trophy,
+  Brain,
+  Heart,
+  CheckCircle
 } from 'lucide-react';
 
 // Define the types for the benefit categories
@@ -15,7 +15,7 @@ type BenefitCategory = 'culture' | 'benefits' | 'growth' | 'wellness';
 const LifeAtSwiftSection = () => {
   // Define the active category state with proper typing
   const [activeCategory, setActiveCategory] = useState<BenefitCategory>('culture');
-
+  const [picurl, setpicurl] = useState('/culture.jpg')
   // Define the categories
   const categories = [
     { id: 'culture', label: 'Culture' },
@@ -24,6 +24,24 @@ const LifeAtSwiftSection = () => {
     { id: 'wellness', label: 'Wellness' },
   ];
 
+  function handleClick(id: string) {
+    setActiveCategory(id as BenefitCategory);
+    switch (id) {
+
+      case 'culture':
+        setpicurl('/culture.jpg')
+        break;
+      case 'benefits':
+        setpicurl('/benefit.jpg')
+        break;
+      case 'growth':
+        setpicurl('/growth.jpg')
+        break;
+      default:
+        setpicurl('/wellness.jpg')
+        break;
+    }
+  }
   // Define the culture highlights
   const cultureHighlights = [
     {
@@ -105,7 +123,7 @@ const LifeAtSwiftSection = () => {
             <span className="text-yellow-400"> Purpose</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Join a dynamic team passionate about transforming transportation in South Africa 
+            Join a dynamic team passionate about transforming transportation in South Africa
             while building an exceptional workplace.
           </p>
         </div>
@@ -139,10 +157,10 @@ const LifeAtSwiftSection = () => {
                 {categories.map((category) => (
                   <button
                     key={category.id}
-                    onClick={() => setActiveCategory(category.id as BenefitCategory)}
+                    onClick={() => handleClick(category.id)}
                     className={`px-6 py-2 rounded-full font-medium transition-all
-                      ${activeCategory === category.id 
-                        ? 'bg-yellow-400 text-black' 
+                      ${activeCategory === category.id
+                        ? 'bg-yellow-400 text-black'
                         : 'bg-gray-800 text-gray-300 hover:bg-gray-700'}`}
                   >
                     {category.label}
@@ -153,7 +171,7 @@ const LifeAtSwiftSection = () => {
               {/* Benefits List */}
               <div className="space-y-4">
                 {benefits[activeCategory].map((benefit, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="flex items-center space-x-3 text-gray-300"
                   >
@@ -166,12 +184,12 @@ const LifeAtSwiftSection = () => {
 
             {/* Image Section */}
             <div className="relative h-full min-h-[400px]">
-              <img 
-                src="/api/placeholder/800/600" 
+              <img
+                src={picurl}
                 alt="Life at Swift"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent" />
+              {/* <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent" /> */}
             </div>
           </div>
         </div>

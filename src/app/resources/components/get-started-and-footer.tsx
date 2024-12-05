@@ -41,9 +41,9 @@ const GetStartedAndFooter = () => {
   const supportChannels = [
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Call Support",
+      title: "Support Chat",
       description: "24/7 dedicated line",
-      action: "0800 SWIFT SA",
+      action: "Start Chat",
       isPrimary: true
     },
     {
@@ -107,7 +107,7 @@ const GetStartedAndFooter = () => {
               <span className="text-yellow-400 font-medium">Get Started</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to Join Swift<span className="text-yellow-400">!</span>?
+              Ready to Join Swift<span className="text-yellow-400">!</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Follow these simple steps to begin your journey with South Africa&apos;s most 

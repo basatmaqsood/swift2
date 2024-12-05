@@ -1,24 +1,21 @@
 'use client'
 
 import React from 'react';
-import { 
-  Siren, 
-  AlertTriangle, 
+import {
+  Siren,
+  AlertTriangle,
   CheckCircle,
   Target,
   Bell,
   Eye,
-  Clock
+  Clock,
+  ArrowRight
 } from 'lucide-react';
+import Link from 'next/link';
 
 const SafetySecuritySection = () => {
 
-  const emergencyContacts = {
-    swift: "0800 SWIFT SA",
-    police: "10111",
-    ambulance: "10177",
-    armedResponse: "0800 SWIFT 911"
-  };
+
 
   const securityFeatures = [
     {
@@ -149,36 +146,35 @@ const SafetySecuritySection = () => {
             <span className="text-yellow-400"> Priority</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Comprehensive safety features and protocols designed to protect our drivers 
+            Comprehensive safety features and protocols designed to protect our drivers
             and riders across South Africa.
           </p>
         </div>
 
         {/* Emergency Contacts Banner */}
         <div className="bg-red-500 rounded-2xl p-6 mb-16">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 px-10">
             <div className="flex items-center">
               <Siren className="w-8 h-8 text-white mr-4" />
               <div>
                 <h3 className="text-xl font-bold text-white">Emergency Contacts</h3>
-                <p className="text-red-100">Save these numbers for quick access</p>
+                <p className="text-red-100">Start an Emergency Live Chat</p>
               </div>
             </div>
-            <div className="flex flex-wrap gap-4">
-              {Object.entries(emergencyContacts).map(([service, number]) => (
-                <div key={service} className="bg-white/10 rounded-lg px-4 py-2">
-                  <div className="text-red-100 text-sm">{service.toUpperCase()}</div>
-                  <div className="text-white font-bold">{number}</div>
-                </div>
-              ))}
-            </div>
+            <Link href='/support'
+              className={`px-16 bg-red-600 hover:bg-red-700  text-white py-4 rounded-xl font-medium transition-colors flex items-center justify-center space-x-2`}
+            >
+              <span>Start Chat</span>
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+
           </div>
         </div>
 
         {/* Security Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {securityFeatures.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800"
             >

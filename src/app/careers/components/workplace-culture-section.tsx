@@ -7,17 +7,17 @@ const WorkplaceCultureSection = () => {
 
   const workspaceFeatures = [
     {
-      image: "/api/placeholder/800/500",
+      image: "/workspace.jpg",
       title: "Modern Workspaces",
       description: "State-of-the-art facilities designed for collaboration and innovation"
     },
     {
-      image: "/api/placeholder/800/500",
+      image: "/centers.jpg",
       title: "Wellness Centers",
       description: "Dedicated spaces for mental and physical well-being"
     },
     {
-      image: "/api/placeholder/800/500",
+      image: "/hubs.jpg",
       title: "Learning Hubs",
       description: "Continuous learning and development spaces"
     }

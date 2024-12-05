@@ -220,19 +220,6 @@ const AboutHeroComplete = () => {
                 </div>
               ))}
             </div>
-
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-yellow-400 text-black px-8 py-4 rounded-xl font-medium 
-                hover:bg-yellow-300 transition-all duration-300 flex items-center group">
-                <span>Our Journey</span>
-                <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl 
-                font-medium hover:bg-white/20 transition-all duration-300">
-                Watch Video
-              </button>
-            </div>
           </div>
 
           {/* Right Column - Tech Display */}
@@ -288,14 +275,6 @@ const AboutHeroComplete = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/50">
-        <span className="text-sm mb-2">Scroll to explore</span>
-        <div className="w-6 h-10 border-2 border-white/20 rounded-full flex items-start p-2">
-          <div className="w-2 h-2 bg-white/50 rounded-full animate-bounce" />
         </div>
       </div>
     </div>

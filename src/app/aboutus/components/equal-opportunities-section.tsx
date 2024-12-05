@@ -141,7 +141,7 @@ const EqualOpportunitiesSection = () => {
             </div>
             <div className="relative h-full min-h-[400px]">
               <img
-                src="/api/placeholder/800/600" 
+                src="commitment.jpg" 
                 alt="Diversity at Swift"
                 className="absolute inset-0 w-full h-full object-cover"
               />

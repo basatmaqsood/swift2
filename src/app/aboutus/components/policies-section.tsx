@@ -59,7 +59,7 @@ const PoliciesSection = () => {
       <div className="relative h-[400px] mb-24">
         <div className="absolute inset-0">
           <img 
-            src="/api/placeholder/1920/1080" 
+            src="/transparency.jpg" 
             alt="Swift Policy Background"
             className="w-full h-full object-cover"
           />

@@ -9,6 +9,7 @@ import {
   Upload,
   Send,
 } from 'lucide-react';
+import Link from 'next/link';
 
 type Position = {
   id: string;
@@ -242,12 +243,13 @@ const SecurityRecruitmentSection = () => {
                     ))}
                   </ul>
                 </div>
-                <button
+                <Link
+                href="#apply-security"
                   onClick={() => setSelectedPosition(role)}
                   className="bg-yellow-400 text-black px-6 py-3 rounded-xl font-medium hover:bg-yellow-300 transition-all duration-300 w-full"
                 >
                   Apply Now
-                </button>
+                </Link>
               </div>
             ))
           )}
@@ -255,7 +257,7 @@ const SecurityRecruitmentSection = () => {
 
         {/* Application Form */}
         {selectedPosition && (
-          <div className="mt-12 bg-gray-800/50 backdrop-blur-md rounded-2xl p-8">
+          <div id='apply-security' className="mt-12 bg-gray-800/50 backdrop-blur-md rounded-2xl p-8">
             <h3 className="text-2xl font-bold mb-4">Apply for {selectedPosition.title}</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               {selectedPosition.documents.map((doc) => (

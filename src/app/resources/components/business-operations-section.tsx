@@ -3,11 +3,9 @@ import React, { useState } from 'react';
 import { 
   Wallet, 
   Clock, 
-  Calculator,
   CreditCard,
   Wrench,
   CheckCircle,
-  ChevronRight,
   BanknoteIcon,
 } from 'lucide-react';
 
@@ -24,7 +22,7 @@ const BusinessOperationsSection = () => {
   const commissionStructure = [
     {
       title: "Standard Commission",
-      rate: "15%",
+      rate: "20%",
       description: "Basic commission rate for all trips",
       features: [
         "Lower than industry average",
@@ -35,7 +33,7 @@ const BusinessOperationsSection = () => {
     },
     {
       title: "Peak Hours Bonus",
-      rate: "-5%",
+      rate: "5%",
       description: "Reduced commission during high demand",
       features: [
         "Morning rush (6AM-9AM)",
@@ -46,7 +44,7 @@ const BusinessOperationsSection = () => {
     },
     {
       title: "Performance Rewards",
-      rate: "Up to -3%",
+      rate:"",
       description: "Additional commission reductions",
       features: [
         "High rating bonus",
@@ -150,9 +148,6 @@ const BusinessOperationsSection = () => {
           <div className="mt-8 text-center">
             <button className="inline-flex items-center text-yellow-600 hover:text-yellow-700 
               font-medium group">
-              <Calculator className="w-5 h-5 mr-2" />
-              <span>Calculate Your Potential Earnings</span>
-              <ChevronRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
         </div>
@@ -222,11 +217,7 @@ const BusinessOperationsSection = () => {
               ))}
             </ul>
 
-            <button className="mt-6 inline-flex items-center text-yellow-400 hover:text-yellow-300 
-              transition-colors group">
-              <span>View Service Network</span>
-              <ChevronRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
-            </button>
+
           </div>
 
           {/* Operating Hours */}

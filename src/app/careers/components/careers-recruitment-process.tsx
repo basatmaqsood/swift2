@@ -15,7 +15,7 @@ const RecruitmentProcess = () => {
         "Role expectations",
         "Two-way Q&A session"
       ],
-      imageSrc: "/api/placeholder/600/400",
+      imageSrc: "/initial.jpg",
       imageAlt: "Virtual Interview Process"
     },
     {
@@ -29,7 +29,7 @@ const RecruitmentProcess = () => {
         "Problem-solving focus",
         "Real-world scenarios"
       ],
-      imageSrc: "/api/placeholder/600/400",
+      imageSrc: "/assesment.jpg",
       imageAlt: "Skills Assessment Session"
     },
     {
@@ -43,7 +43,7 @@ const RecruitmentProcess = () => {
         "Culture immersion",
         "Final discussions"
       ],
-      imageSrc: "/api/placeholder/600/400",
+      imageSrc: "/team.jpg ",
       imageAlt: "Team Meeting"
     }
   ];
