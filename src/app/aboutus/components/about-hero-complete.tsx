@@ -5,7 +5,6 @@ import {
   Radio, 
   Map,
   Activity,
-  ChevronRight,
   ChevronDown,
   Users,
   MapPin,
