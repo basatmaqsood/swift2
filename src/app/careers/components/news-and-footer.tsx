@@ -29,7 +29,7 @@ const NewsAndFooter = () => {
       category: 'business',
       title: "Swift! Launches New Security Operations Center in Johannesburg",
       date: "November 15, 2024",
-      image: "/api/placeholder/600/400",
+      image: "growth.jpg",
       description: "State-of-the-art facility to enhance rider and driver safety across Gauteng region",
       tag: "Operations"
     },
@@ -38,7 +38,7 @@ const NewsAndFooter = () => {
       category: 'community',
       title: "500 New Jobs Created Through Driver Partnership Program",
       date: "November 10, 2024",
-      image: "/api/placeholder/600/400",
+      image: "/hubs.jpg",
       description: "Swift! continues to drive employment opportunities in local communities",
       tag: "Community"
     },
@@ -47,7 +47,7 @@ const NewsAndFooter = () => {
       category: 'security',
       title: "Enhanced Security Features Released for Night Rides",
       date: "November 5, 2024",
-      image: "/api/placeholder/600/400",
+      image: "2.png",
       description: "New safety measures including real-time monitoring and rapid response integration",
       tag: "Safety"
     }
@@ -167,35 +167,27 @@ const NewsAndFooter = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="bg-white hover:bg-yellow-400 transition-colors rounded-xl px-8 py-4 flex items-center space-x-3">
+                <button className=" hover:bg-yellow-400 transition-colors rounded-xl">
                     <img 
-                      src="/api/placeholder/24/24" 
-                      alt="App Store" 
-                      className="w-6 h-6"
+                      src="/appstore.jpg" 
+                      alt="Play Store" 
+                      className="w-auto h-12  "
                     />
-                    <div className="text-left">
-                      <div className="text-xs">Download on the</div>
-                      <div className="text-lg font-semibold">App Store</div>
-                    </div>
                   </button>
 
-                  <button className="bg-white hover:bg-yellow-400 transition-colors rounded-xl px-8 py-4 flex items-center space-x-3">
+                  <button className=" hover:bg-yellow-400 transition-colors rounded-xl">
                     <img 
-                      src="/api/placeholder/24/24" 
+                      src="/googleplay.png" 
                       alt="Play Store" 
-                      className="w-6 h-6"
+                      className="w-auto h-12  "
                     />
-                    <div className="text-left">
-                      <div className="text-xs">Get it on</div>
-                      <div className="text-lg font-semibold">Google Play</div>
-                    </div>
                   </button>
                 </div>
               </div>
 
               <div className="relative lg:h-[600px] p-8 flex items-center justify-center">
                 <img 
-                  src="/api/placeholder/400/800" 
+                  src="/desktop.webp" 
                   alt="Swift App Interface"
                   className="rounded-2xl h-full object-cover shadow-lg"
                 />
